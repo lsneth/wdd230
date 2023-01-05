@@ -5,7 +5,6 @@ function getLastUpdated() {
         .then(response => response.json())
         .then(branch => {
             // Extract the date and time of the most recent commit
-            console.log(branch)
             let lastUpdated = branch.commit.commit.author.date;
             const date = new Date(lastUpdated);
 
