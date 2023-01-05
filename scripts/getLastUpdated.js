@@ -6,8 +6,22 @@ function getLastUpdated() {
             // Extract the date and time of the most recent commit
             console.log(branch)
             let lastUpdated = branch.commit.commit.author.date;
-            // Update the HTML element with the extracted date and time
-            document.getElementById('last-updated').innerHTML = lastUpdated;
+            const date = new Date(lastUpdated);
+
+            const formattedDate = date.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "numeric",
+            day: "numeric",
+            });
+            const formattedTime = date.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "numeric",
+            second: "numeric",
+            });
+
+            const formattedDateTime = `${formattedDate} ${formattedTime}`;
+
+            document.getElementById('last-updated').innerHTML = formattedDateTime;
     });
 }
 // Call the getLastUpdated() function when the page loads
