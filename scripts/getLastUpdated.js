@@ -1,5 +1,4 @@
 function getLastUpdated() {
-    console.log('hello world')
     // Fetch the commit history from GitHub using the Git Data API
     fetch('https://api.github.com/repos/lsneth/wdd230/commits')
         .then(response => response.json())
@@ -9,6 +8,7 @@ function getLastUpdated() {
             // Update the HTML element with the extracted date and time
             document.getElementById('last-updated').innerHTML = lastUpdated;
     });
+    console.log(response)
 }
 // Call the getLastUpdated() function when the page loads
 window.onload = getLastUpdated;
