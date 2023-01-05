@@ -1,5 +1,6 @@
 function getLastUpdated() {
-    // Fetch the commit history from GitHub using the Git Data API
+    console.log('hello world')
+    // Fetch the latest commit of main branch from GitHub using the Git Data API
     fetch('https://api.github.com/repos/lsneth/wdd230/branches/main')
         .then(response => response.json())
         .then(branch => {
