@@ -22,8 +22,8 @@ function getLastUpdated() {
             const formattedDateTime = `${formattedDate} ${formattedTime}`
 
             //display formatted date and time in #last-updated element
-            document.getElementById('last-updated').textContent = formattedDateTime
+            document.querySelector('#lastUpdated').textContent = formattedDateTime
     })
 }
 //Call the getLastUpdated() function when the page loads
-window.onload = getLastUpdated
+window.addEventListener('load', getLastUpdated)
