@@ -1,0 +1,14 @@
+@media only screen and (min-width: 32.5em) {
+    body{
+        margin: 0 20%;
+    }
+
+    #profilePicture{
+        margin-right:30px;
+
+    }
+
+    h2{
+        margin:40px;
+    }
+  }
