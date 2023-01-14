@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Color Scheme */
+:root {
+    --dark-blue: #040028;
+    --blue: #070496;
+    /* and white and black */
+}
+
+html{
+    padding-left:40px;
+    padding-right:40px;
+    color:var(--dark-blue);
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+
+header{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+    text-align: center;
+}
+
+header,nav,main {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+nav {
+	text-align: center;
+    border-bottom:solid #040028 1px;
+    display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	display: block;
+	color: #040028;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #040028;
+	color: white;
+}
+
+section{
+    margin-bottom:50px;
+}
+
+#target-audience p{
+    margin-top:0px;
+}
+
+#target-audience h3{
+    margin-bottom:3px;
+}
+
+#dark-blue{
+    color:white;
+    background-color: var(--dark-blue);
+}
+
+#blue{
+    color:white;
+    background-color: var(--blue);
+}
+
+#dark-blue, #blue, #white{
+    width: 150px;
+    margin:0;
+    padding:10px;
+    text-align: center;
+    border:1px solid black;
+}
+
+img{
+    max-width: 100%;
+}
+
+/***********************************************/
+/** Media Queries for larger views *************/
+/***********************************************/
+
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+}
+
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
