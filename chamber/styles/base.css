@@ -17,8 +17,15 @@ nav {
 	background-color: var(--blue);
 }
 
-img {
-    width:50px;
+header{}
+
+#logo {
+    width:35px;
+	display:inline;
+}
+
+#siteTitle h1 {
+	display:inline;
 }
 
 .navigation {
@@ -41,6 +48,7 @@ img {
 	text-align: left;
 	text-decoration: none;
 	color:white;
+	background-color: var(--dark-blue);
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -53,16 +61,25 @@ img {
 
 .navigation a:hover, .navigation a:active {
 	color: white;
-	background-color: var(--dark-blue);
+	background-color: var(--blue);
 }
 
 
 .responsive li {
 	display: block;
+	border-top: solid .5px white;
+}
+
+.responsive li a{
+	text-align: right;
 }
 
 .responsive #menu::before {
 	content: '✖';
+}
+
+#menu{
+	text-align: right;
 }
 
 /* bigger than mobile ******************************************************************/
