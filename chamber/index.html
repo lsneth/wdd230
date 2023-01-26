@@ -6,18 +6,30 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='description' content='Rexburg Chamber of Commerce home page'>
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel='stylesheet' href='styles/normalize.css'>
+    <link rel='stylesheet' href='styles/base.css'>
+    <link rel='stylesheet' href='styles/medium.css'>
+    <link rel='stylesheet' href='styles/large.css'>
 
     <title>Rexburg Chamber of Commerce</title>
 </head>
 <body>
     <header>
+        <div id='headerTop'>
+            <img id='logo' src='images/logo.png' alt='rexburg chamber of commerce logo'>
+            <div id='siteTitle'>
+                <h1>Rexburg</h1>
+                <h2>Chamber of Commerce</h2> 
+                <p id='date'>asdf</p>
+            </div>
+            <div class='socials'>
+                <a href='https://www.facebook.com/' class='fa fa-facebook'></a>
+                <a href='https://www.linkedin.com/' class='fa fa-linkedin'></a>
+            </div>
+        </div>
         <nav>
-            <ul class="navigation">
-                <li><a id="menu" href="#"></a></li>
+            <ul class='navigation'>
+                <li><a id='menu' href='#'></a></li>
                 <li><a href='#'>Page Link</a></li>
                 <li><a href='#'>Page Link</a></li>
                 <li><a href='#'>Page Link</a></li>
@@ -26,17 +38,61 @@
                 <li><a href='#'>Social Link</a></li>
             </ul>
         </nav>
-        <img id='logo' src='images/logo.png' rexburg chamber of commerce logo'>
-        <div id='siteTitle'>
-            <h1>Rexburg</h1>
-            <h2>Chamber of Commerce</h2> 
-        </div>
-
-        <p>Wednesday, 24 July 2020</p>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div class='placeHolder hero'>hero</div>
+        <div class='placeHolder event'>event</div>
+        <div class='placeHolder weather'>weather</div>
+        <div class='placeHolder news'>news</div>
+        <div class='placeHolder spotlights'>
+            <div class='placeHolder spotlight spotlight1'>spotlight spotlight</div>
+            <div class='placeHolder spotlight spotlight2'>spotlight spotlight</div>
+            <div class='placeHolder spotlight spotlight3'>spotlight spotlight</div>
+        </div>
+        <div class='placeHolder join'>join</div>
+    </main>
+    <footer>
+        <div id='mobileFooter'>
+            <img src='images/logo-white.png'>
+            <h1>Rexburg Chamber of Commerce</h1>
+            <p>123 Main Street</p>
+            <p>Rexburg, ID 83440</p>
+            <p>info@rexburgcc.org</p>
+            <p>1(234)567-8900</p>
+            <hr>
+            <p>&copy; <span class='currentYearMobile'></span> Rexburg Chamber</p>
+            <p>Lucas Nethercott</p>
+            <p>WDD 230 Project</p>
+            <p>Last Updated: <span class='lastUpdatedMobile'></span></p>
+        </div>
+        <div id='mediumFooter'>
+            <div id='mediumFooterTop'>
+                <img src='images/logo-white.png'>
+                <div id='footerTopLeft'>
+                    <h1>Rexburg Chamber of Commerce</h1>
+                    <p>123 Main Street</p>
+                    <p>Rexburg, ID 83440</p>
+                </div>
+                <div class='flexRight mediumFooterTopRight'>
+                    <p>info@rexburgcc.org</p>
+                    <p>1(234)567-8900</p>
+                    <p>Location Map</p>
+                </div> 
+            </div>
+            <hr>
+            <div id='footerBottom'>
+                <p class='inline'>&copy; <span class='currentYearMedium'></span> Rexburg Chamber |</span></p>
+                <p class='inline'>Lucas Nethercott |</p>
+                <p class='inline'>WDD 230 Project<span class='bar'> |</span></p>
+                <p id='lastUpdatedString'>Last Updated: <span class='lastUpdatedMedium'></span></p>
+            </div>
+        </div>
+    </footer>
 
     <script src='scripts/nav.js'></script>
+    <script src='scripts/date.js'></script>
+    <script src='https://kit.fontawesome.com/40ef52cfde.js' crossorigin='anonymous'></script>
+    <script src='scripts/current-year.js'></script>
+    <script src='scripts/last-updated.js'></script>
 </body>
 </html>
