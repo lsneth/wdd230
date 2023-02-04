@@ -1,100 +1,153 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name='description' content='Rexburg Chamber of Commerce home page'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta name='description' content='Rexburg Chamber of Commerce home page'>
 
-    <link rel="icon" href="favicon.ico"/>
+        <link rel="icon" href="favicon.ico">
 
-    <link rel='stylesheet' href='styles/normalize.css'>
-    <link rel='stylesheet' href='styles/base.css'>
-    <link rel='stylesheet' href='styles/medium.css'>
-    <link rel='stylesheet' href='styles/large.css'>
+        <link rel='stylesheet' href='styles/normalize.css'>
+        <link rel='stylesheet' href='styles/base.css'>
+        <link rel='stylesheet' href='styles/medium.css'>
+        <link rel='stylesheet' href='styles/large.css'>
 
-    <title>Rexburg Chamber of Commerce</title>
-</head>
-<body>
-    <header>
-        <div id='headerTop'>
-            <img id='logo' src='images/logo.png' alt='rexburg chamber of commerce logo'>
-            <div id='siteTitle'>
-                <h1>Rexburg</h1>
-                <h2>Chamber of Commerce</h2> 
-                <p id='date'>asdf</p>
-            </div>
-            <div class='socials'>
-                <a href='https://www.facebook.com/' class='fa fa-facebook'></a>
-                <a href='https://www.linkedin.com/' class='fa fa-linkedin'></a>
-            </div>
-        </div>
-        <nav>
-            <ul class='navigation'>
-                <li><a id='menu' href='#'></a></li>
-                <li><a href='#'>Page Link</a></li>
-                <li><a href='#'>Page Link</a></li>
-                <li><a href='#'>Page Link</a></li>
-                <li><a href='#'>Page Link</a></li>
-                <li><a href='#'>Social Link</a></li>
-                <li><a href='#'>Social Link</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class='placeHolder hero'>hero</div>
-        <div class='placeHolder event'>event</div>
-        <div class='placeHolder weather'>weather</div>
-        <div class='placeHolder news'>news</div>
-        <div class='placeHolder spotlights'>
-            <div class='placeHolder spotlight spotlight1'>spotlight spotlight</div>
-            <div class='placeHolder spotlight spotlight2'>spotlight spotlight</div>
-            <div class='placeHolder spotlight spotlight3'>spotlight spotlight</div>
-        </div>
-        <div class='placeHolder join'>join</div>
-    </main>
-    <footer>
-        <div id='mobileFooter'>
-            <img src='images/logo-white.png' alt='white rexburg chamber of commerce logo'>
-            <h1>Rexburg Chamber of Commerce</h1>
-            <p>123 Main Street</p>
-            <p>Rexburg, ID 83440</p>
-            <p>info@rexburgcc.org</p>
-            <p>1(234)567-8900</p>
-            <hr>
-            <p>&copy; <span class='currentYearMobile'></span> Rexburg Chamber</p>
-            <p>Lucas Nethercott</p>
-            <p>WDD 230 Project</p>
-            <p>Last Updated: <span class='lastUpdatedMobile'></span></p>
-        </div>
-        <div id='mediumFooter'>
-            <div id='mediumFooterTop'>
-                <img src='images/logo-white.png' alt='white rexburg chamber of commerce logo'>
-                <div id='footerTopLeft'>
-                    <h1>Rexburg Chamber of Commerce</h1>
-                    <p>123 Main Street</p>
-                    <p>Rexburg, ID 83440</p>
+        <title>Rexburg Chamber of Commerce</title>
+    </head>
+    <body>
+        <header>
+            <p id='banner'></p>
+            <div id='headerTop'>
+                <img id='logo' src='images/logo.png' alt='rexburg chamber of commerce logo'>
+                <div id='siteTitle'>
+                    <h1>Rexburg</h1>
+                    <h2>Chamber of Commerce</h2> 
+                    <p id='date'></p>
                 </div>
-                <div class='flexRight mediumFooterTopRight'>
-                    <p>info@rexburgcc.org</p>
-                    <p>1(234)567-8900</p>
-                    <p>Location Map</p>
-                </div> 
+                <div class='socials'>
+                    <a href='https://www.facebook.com/' class='fa fa-facebook'></a>
+                    <a href='https://www.linkedin.com/' class='fa fa-linkedin'></a>
+                </div>
             </div>
-            <hr>
-            <div id='footerBottom'>
-                <p class='inline'>&copy; <span class='currentYearMedium'></span> Rexburg Chamber |</p>
-                <p class='inline'>Lucas Nethercott |</p>
-                <p class='inline'>WDD 230 Project<span class='bar'> |</span></p>
-                <p id='lastUpdatedString'>Last Updated: <span class='lastUpdatedMedium'></span></p>
+            <nav>
+                <ul class='navigation'>
+                    <li><a id='menu' href='#'></a></li>
+                    <li><a href='#'>Page Link</a></li>
+                    <li><a href='#'>Page Link</a></li>
+                    <li><a href='#'>Page Link</a></li>
+                    <li><a href='#'>Page Link</a></li>
+                    <li><a href='#'>Social Link</a></li>
+                    <li><a href='#'>Social Link</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class='homeCard hero'>
+                <h1>Welcome to Rexburg</h1>
+                <button>Join the Chamber</button>
             </div>
-        </div>
-    </footer>
+            <div class='homeCard event'>
+                <h1>Ribbon Cutting</h1>
+                <h2>The Diamond Shack</h2>
+                <p>Join us for the grand opening of The Diamond Shack, Thrusday at 1:00 p.m.</p>
+            </div>
+            <div class='homeCard weather'>
+                <h1>Weather</h1>
+                <h2>Partly Cloudy</h2>
+                <div id='weatherGrid'>
+                    <img src='images/weather.png' alt='partly cloudy weather icon'>
+                    <h1 id='temperature'>90°</h1>
+                    <hr class='fullWidthGrid'>
+                    <p>Wind Speed:</p>
+                    <p>2.5 m/h</p>
+                    <p>Wind Chill:</p>
+                    <p>N/A</p>
+                </div>
+            </div>
+            <div class='homeCard news'>
+                <h1>News Release</h1>
+                <p>Lorem ipsum dolor sit amet. Qui inventore sequi est consequatur eligendi sed distinctio
+                    voluptatem sed fugit quis sit aliquam dolores a exercitationem officia aut repellat
+                    consequatur. Vel dolores omnis 33 nihil omnis non libero soluta et velit illum. A
+                    voluptas ducimus aut consequuntur nihil et corrupti nulla et nihil quidem? Ut veritatis
+                    galisum et consequatur magnam et quos nemo qui labore internos ut dolore sunt ut
+                    possimus nihil. Aut voluptatem galisum aut pariatur quia ad reiciendis dolorum et
+                    possimus quasi qui optio velit! </p>
+            </div>
+            <div class='homeCard spotlights'>
+                <div class='spotlight spotlight1'>
+                    <h1>Thankful Transport</h1>
+                    <img src='images/truck.png' alt='truck logo'>
+                    <p>"We get it there for you!"</p>
+                    <hr>
+                    <p>hello@thankfultransport.com</p>
+                    <p>+1-234-567-6789</p>
+                </div>
+                <div class='spotlight spotlight2'>
+                    <h1>Code Primera</h1>
+                    <img src='images/truck.png' alt='truck logo'>
+                    <p>"We get it there for you!"</p>
+                    <hr>
+                    <p>hello@thankfultransport.com</p>
+                    <p>+1-234-567-6789</p>
+                </div>
+                <div class='spotlight spotlight3'>
+                    <h1>Build a Treefort</h1>
+                    <img src='images/truck.png' alt='truck logo'>
+                    <p>"We get it there for you!"</p>
+                    <hr>
+                    <p>hello@thankfultransport.com</p>
+                    <p>+1-234-567-6789</p>
+                </div>
+            </div>
+            <div class='homeCard join'>
+                <button>Join us!</button>
+                <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+            </div>
+        </main>
+        <footer>
+            <div id='mobileFooter'>
+                <img src='images/logo-white.png' alt='white rexburg chamber of commerce logo'>
+                <h1>Rexburg Chamber of Commerce</h1>
+                <p>123 Main Street</p>
+                <p>Rexburg, ID 83440</p>
+                <p>info@rexburgcc.org</p>
+                <p>1(234)567-8900</p>
+                <hr>
+                <p>&copy; <span class='currentYearMobile'></span> Rexburg Chamber</p>
+                <p>Lucas Nethercott</p>
+                <p>WDD 230 Project</p>
+                <p>Last Updated: <span class='lastUpdatedMobile'></span></p>
+            </div>
+            <div id='mediumFooter'>
+                <div id='mediumFooterTop'>
+                    <img src='images/logo-white.png' alt='white rexburg chamber of commerce logo'>
+                    <div id='footerTopLeft'>
+                        <h1>Rexburg Chamber of Commerce</h1>
+                        <p>123 Main Street</p>
+                        <p>Rexburg, ID 83440</p>
+                    </div>
+                    <div class='flexRight mediumFooterTopRight'>
+                        <p>info@rexburgcc.org</p>
+                        <p>1(234)567-8900</p>
+                        <p>Location Map</p>
+                    </div> 
+                </div>
+                <hr>
+                <div id='footerBottom'>
+                    <p class='inline'>&copy; <span class='currentYearMedium'></span> Rexburg Chamber |</p>
+                    <p class='inline'>Lucas Nethercott |</p>
+                    <p class='inline'>WDD 230 Project<span class='bar'> |</span></p>
+                    <p id='lastUpdatedString'>Last Updated: <span class='lastUpdatedMedium'></span></p>
+                </div>
+            </div>
+        </footer>
 
-    <script src='scripts/nav.js'></script>
-    <script src='scripts/date.js'></script>
-    <script src='https://kit.fontawesome.com/40ef52cfde.js' crossorigin='anonymous'></script>
-    <script src='scripts/current-year.js'></script>
-    <script src='scripts/last-updated.js'></script>
-</body>
+        <script src='scripts/nav.js'></script>
+        <script src='scripts/date.js'></script>
+        <script src='https://kit.fontawesome.com/40ef52cfde.js' crossorigin='anonymous'></script>
+        <script src='scripts/current-year.js'></script>
+        <script src='scripts/last-updated.js'></script>
+    </body>
 </html>
