@@ -6,7 +6,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <meta name='description' content='Rexburg Chamber of Commerce home page'>
 
-        <link rel="icon" href="favicon.ico">
+        <link rel='icon' href='favicon.ico'>
 
         <link rel='stylesheet' href='styles/normalize.css'>
         <link rel='stylesheet' href='styles/base.css'>
@@ -19,7 +19,7 @@
         <header>
             <p id='banner'></p>
             <div id='headerTop'>
-                <img id='logo' src='images/logo.png' alt='rexburg chamber of commerce logo'>
+                <img id='logo' src='images/logo.webp' alt='rexburg chamber of commerce logo'>
                 <div id='siteTitle'>
                     <h1>Rexburg</h1>
                     <h2>Chamber of Commerce</h2> 
@@ -43,9 +43,16 @@
             </nav>
         </header>
         <main>
-            <div class='homeCard hero'>
+            <!-- <div class='homeCard hero'>
                 <h1>Welcome to Rexburg</h1>
                 <button>Join the Chamber</button>
+            </div> -->
+            <div class='homeCard hero'>
+                <picture>
+                    <source srcset='images/image400.jpg' media='(min-width: 500px) and (max-width: 799px)'>
+                    <source srcset='images/image600.jpg' media='(min-width:800px)'>
+                    <img src='images/image250.jpg' alt='business meeting'>
+                </picture>
             </div>
             <div class='homeCard event'>
                 <h1>Ribbon Cutting</h1>
@@ -56,13 +63,13 @@
                 <h1>Weather</h1>
                 <h2>Partly Cloudy</h2>
                 <div id='weatherGrid'>
-                    <img src='images/weather.png' alt='partly cloudy weather icon'>
-                    <h1 id='temperature'>90°</h1>
+                    <img src='images/weather.png' alt='partly cloudy weather icon' id='weatherIcon'>
+                    <h1><span id='temp'>30</span>°</h1>
                     <hr class='fullWidthGrid'>
                     <p>Wind Speed:</p>
-                    <p>2.5 m/h</p>
+                    <p><span id='windSpeed'>7</span>m/h</p>
                     <p>Wind Chill:</p>
-                    <p>N/A</p>
+                    <p id='windChill'></p>
                 </div>
             </div>
             <div class='homeCard news'>
@@ -79,7 +86,7 @@
                 <div class='spotlight spotlight1'>
                     <h1>Thankful Transport</h1>
                     <img src='images/truck.png' alt='truck logo'>
-                    <p>"We get it there for you!"</p>
+                    <p>'We get it there for you!'</p>
                     <hr>
                     <p>hello@thankfultransport.com</p>
                     <p>+1-234-567-6789</p>
@@ -87,7 +94,7 @@
                 <div class='spotlight spotlight2'>
                     <h1>Code Primera</h1>
                     <img src='images/truck.png' alt='truck logo'>
-                    <p>"We get it there for you!"</p>
+                    <p>'We get it there for you!'</p>
                     <hr>
                     <p>hello@thankfultransport.com</p>
                     <p>+1-234-567-6789</p>
@@ -95,7 +102,7 @@
                 <div class='spotlight spotlight3'>
                     <h1>Build a Treefort</h1>
                     <img src='images/truck.png' alt='truck logo'>
-                    <p>"We get it there for you!"</p>
+                    <p>'We get it there for you!'</p>
                     <hr>
                     <p>hello@thankfultransport.com</p>
                     <p>+1-234-567-6789</p>
@@ -108,7 +115,7 @@
         </main>
         <footer>
             <div id='mobileFooter'>
-                <img src='images/logo-white.png' alt='white rexburg chamber of commerce logo'>
+                <img src='images/logo-white.webp' alt='white rexburg chamber of commerce logo'>
                 <h1>Rexburg Chamber of Commerce</h1>
                 <p>123 Main Street</p>
                 <p>Rexburg, ID 83440</p>
@@ -122,7 +129,7 @@
             </div>
             <div id='mediumFooter'>
                 <div id='mediumFooterTop'>
-                    <img src='images/logo-white.png' alt='white rexburg chamber of commerce logo'>
+                    <img src='images/logo-white.webp' alt='white rexburg chamber of commerce logo'>
                     <div id='footerTopLeft'>
                         <h1>Rexburg Chamber of Commerce</h1>
                         <p>123 Main Street</p>
@@ -149,5 +156,6 @@
         <script src='https://kit.fontawesome.com/40ef52cfde.js' crossorigin='anonymous'></script>
         <script src='scripts/current-year.js'></script>
         <script src='scripts/last-updated.js'></script>
+        <script src='scripts/windchill.js'></script>
     </body>
 </html>

@@ -206,13 +206,23 @@ hr{
 	display:none;
 }
 
-.hero{
+/* .hero{
 	text-align: left;
 	position: relative;
 	background-image: url('../images/hero-img.jpg');
 	background-position: center;
 	background-size: cover;
 	padding:0;
+} */
+
+.hero{
+	text-align: left;
+	position: relative;
+	background-image: url('../images/hero-small.jpg');
+	background-position: center;
+	background-size: cover;
+	padding:0;
+	margin:0;
 }
 
 .hero h1{
@@ -220,6 +230,10 @@ hr{
 	color:white;
 	filter: drop-shadow(3px 3px 5px #000000);
 	margin:15px;
+}
+
+#weatherIcon{
+	margin:0 auto;
 }
 
 button{
