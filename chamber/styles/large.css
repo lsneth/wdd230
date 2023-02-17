@@ -102,6 +102,7 @@
     }
 
     .hero{
+        background-image: url('../images/hero-large.png');
         position: relative;
     }
 
