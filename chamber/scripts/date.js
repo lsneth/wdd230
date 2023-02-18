@@ -10,4 +10,6 @@ const year = currentDate.getUTCFullYear()
 const dateString = `${dayName}, ${day} ${monthName} ${year}`
 document.querySelector('#date').textContent=dateString
 
-if(dayName==='Monday' || dayName==='Tuesday') document.querySelector('#banner').textContent='🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'
+const banner=document.querySelector('#banner'); // for some reason it requires a semi colon here
+
+(dayName==='Monday' || dayName==='Tuesday') ? banner.textContent='🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.' : banner.style.display = 'none'
