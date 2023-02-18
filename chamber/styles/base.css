@@ -10,6 +10,14 @@ body {
     color:var(--dark-blue);
 }
 
+picture p{
+	margin-bottom:50px;
+}
+
+img[data-src] {
+	filter: blur(0.2em);
+}
+
 #headerTop{
 	margin:15px 15px 0;
 }
@@ -28,6 +36,8 @@ main{
 
 img{
 	max-width: 100%;
+	filter: blur(0em);
+	transition: filter 0.5s;
 }
 
 .spotlight{
@@ -258,4 +268,10 @@ button:hover{
 	color:white;
 	margin:0;
 	padding: 10px;
+}
+
+#discoverMain{
+	display:block;
+	text-align: center;
+	padding:30px;
 }

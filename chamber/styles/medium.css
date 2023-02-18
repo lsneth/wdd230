@@ -3,6 +3,10 @@
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
+	picture img:hover{
+        filter: blur(0.1em);
+    }
+
 	.hero{
 		background-image: url('../images/hero-medium.png');
 		grid-column: 1/-1;
@@ -83,6 +87,10 @@
 	}
 
 	.bar{
+		display: none;
+	}
+
+	#phoneMenu{
 		display: none;
 	}
 }

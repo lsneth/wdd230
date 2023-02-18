@@ -12,6 +12,21 @@
 		text-align: center;
 	}
 
+    picture{
+        margin:50px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    
+    picture img{
+        margin:30px;
+    }
+    
+    picture p{
+        margin-top:15%;
+    }
+
 	#menu {
 		display: none;
         background-color:var(--dark-blue);
@@ -121,4 +136,8 @@
     .homeCard{
         padding:20px;
     }
+
+    #phoneMenu{
+		display: none;
+	}
 }
