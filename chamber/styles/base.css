@@ -159,6 +159,9 @@ img{
 	background-color: var(--blue);
 }
 
+#phoneMenu{
+padding-right:15px;
+}
 
 .responsive li {
 	display: block;
@@ -215,15 +218,6 @@ hr{
 .bar{
 	display:none;
 }
-
-/* .hero{
-	text-align: left;
-	position: relative;
-	background-image: url('../images/hero-img.jpg');
-	background-position: center;
-	background-size: cover;
-	padding:0;
-} */
 
 .hero{
 	text-align: left;

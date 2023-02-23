@@ -8,7 +8,7 @@
     }
 
 	.hero{
-		background-image: url('../images/hero-medium.png');
+		background-image: url('../images/hero-medium.jpg');
 		grid-column: 1/-1;
 		grid-row:1/2;
 	}
