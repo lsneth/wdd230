@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Rexburg Chamber of Commerce join page">
+
+        <link rel="icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+
+        <title>Join | Rexburg Chamber of Commerce</title>
+    </head>
+    <body>
+        <header>
+            <p id="banner"></p>
+            <div id="headerTop">
+                <img id="logo" src="images/logo.webp" alt="rexburg chamber of commerce logo">
+                <div id="siteTitle">
+                    <h1>Rexburg</h1>
+                    <h2>Chamber of Commerce</h2> 
+                    <p id="date"></p>
+                </div>
+                <div class="socials">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li id="phoneMenu"><a id="menu" href="#"></a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id='join'>
+            <form method="get" action="thankyou.html">
+                <h1>Join RCC Today!</h1>
+                <label for="first-name">First Name<span>*</span></label>
+                <input type="text" id="first-name" name="first-name" required>
+              
+                <label for="last-name">Last Name<span>*</span></label>
+                <input type="text" id="last-name" name="last-name" required>
+              
+                <label for="position">Business Position Title</label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}">
+              
+                <label for="email">Email<span>*</span></label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+              
+                <label for="phone">Cell Phone Number<span>*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+              
+                <label for="business-name">Business Name/Title<span>*</span></label>
+                <input type="text" id="business-name" name="business-name" required>
+              
+                <label for="membership-level">Membership Level<span>*</span></label>
+                <select id="membership-level" name="membership-level" required>
+                  <option value="">--Please select--</option>
+                  <option value="NP Membership">NP Membership (Free)</option>
+                  <option value="Bronze Membership">$50 - Bronze Membership</option>
+                  <option value="Silver Membership">$100 - Silver Membership</option>
+                  <option value="Gold Membership">$200 - Gold Membership</option>
+                </select>
+              
+                <label for="description">Briefly Describe Your Business</label>
+                <textarea id="description" name="description"></textarea>
+              
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+              
+                <input type="submit" value="Submit">
+              </form>
+              <table class="membership-benefits">
+                <thead>
+                    <tr>
+                      <th>Membership Level</th>
+                      <th>Benefits</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>NP</td>
+                      <td>No fee, limited benefits</td>
+                      <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td>Bronze</td>
+                        <td>Access to trainings, advertising opportunities</td>
+                        <td>$5</td>
+                    </tr>
+                    <tr>
+                        <td>Silver</td>
+                        <td>Access to trainings, advertising opportunities, event discounts</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Gold</td>
+                        <td>Access to trainings, advertising opportunities, event discounts, priority listing on the website</td>
+                        <td>$15</td>
+                    </tr>
+                  </tbody>
+            </table>           
+        </main>
+        <footer>
+            <div id="mobileFooter">
+                <img src="images/logo-white.webp" alt="white rexburg chamber of commerce logo">
+                <h1>Rexburg Chamber of Commerce</h1>
+                <p>123 Main Street</p>
+                <p>Rexburg, ID 83440</p>
+                <p>info@rexburgcc.org</p>
+                <p>1(234)567-8900</p>
+                <hr>
+                <p>&copy; <span class="currentYearMobile"></span> Rexburg Chamber</p>
+                <p>Lucas Nethercott</p>
+                <p>WDD 230 Project</p>
+                <p>Last Updated: <span class="lastUpdatedMobile"></span></p>
+            </div>
+            <div id="mediumFooter">
+                <div id="mediumFooterTop">
+                    <img src="images/logo-white.webp" alt="white rexburg chamber of commerce logo">
+                    <div id="footerTopLeft">
+                        <h1>Rexburg Chamber of Commerce</h1>
+                        <p>123 Main Street</p>
+                        <p>Rexburg, ID 83440</p>
+                    </div>
+                    <div class="flexRight mediumFooterTopRight">
+                        <p>info@rexburgcc.org</p>
+                        <p>1(234)567-8900</p>
+                        <p>Location Map</p>
+                    </div> 
+                </div>
+                <hr>
+                <div id="footerBottom">
+                    <p class="inline">&copy; <span class="currentYearMedium"></span> Rexburg Chamber |</p>
+                    <p class="inline">Lucas Nethercott |</p>
+                    <p class="inline">WDD 230 Project<span class="bar"> |</span></p>
+                    <p id="lastUpdatedString">Last Updated: <span class="lastUpdatedMedium"></span></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="scripts/timestamp.js"></script>
+    </body>
+</html>

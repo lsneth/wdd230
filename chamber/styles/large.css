@@ -1,17 +1,4 @@
 @media only screen and (min-width: 60em) {
-    .navigation {
-		display: flex;
-	}
-
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-
-	.navigation a {
-		text-align: center;
-	}
-
     picture{
         margin:50px;
         display:grid;
@@ -137,7 +124,41 @@
         padding:20px;
     }
 
-    #phoneMenu{
-		display: none;
-	}
+    table {
+        display:block;
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+      
+    th, td {
+        text-align: left;
+        padding: 0.5rem;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #join{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    table{
+        margin: 40px;
+        max-width: 400px;
+    }
+
+    form{
+        max-width: none;
+        margin:0;
+        width:100%;
+    }
 }

@@ -3,6 +3,19 @@
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
 	picture img:hover{
         filter: blur(0.1em);
     }

@@ -269,3 +269,49 @@ button:hover{
 	text-align: center;
 	padding:30px;
 }
+
+#join{
+	display:block;
+	padding:0 25px;
+}
+
+table{
+	display:none;
+}
+
+form{
+	max-width:450px;
+	margin:25px auto 0;
+}
+  
+form span {
+	color: red;
+	font-weight: bold;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+form input[type="submit"] {
+background-color: var(--blue);
+color: white;
+border: none;
+border-radius: 2px;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+background-color: var(--dark-blue);
+}
