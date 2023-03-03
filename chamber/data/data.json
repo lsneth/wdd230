@@ -1,0 +1,86 @@
+{
+    "businesses": [
+      {
+        "name": "ABC Company",
+        "address": "123 Main St, Anytown USA",
+        "phone": "555-1234",
+        "website": "https://www.abccompany.com",
+        "image": "./images/company-logo.png",
+        "membership_level": "gold",
+        "other_info": "Founded in 1990, ABC Company specializes in widgets and has a loyal customer base."
+      },
+      {
+        "name": "XYZ Corporation",
+        "address": "456 High St, Anytown USA",
+        "phone": "555-5678",
+        "website": "https://www.xyzcorp.com",
+        "image": "./images/company-logo.png",
+        "membership_level": "silver",
+        "other_info": "A global leader in manufacturing, XYZ Corporation operates in 20 countries and has won numerous awards for sustainability."
+      },
+      {
+        "name": "123 Enterprises",
+        "address": "789 Broad St, Anytown USA",
+        "phone": "555-9012",
+        "website": "https://www.123ent.com",
+        "image": "./images/company-logo.png",
+        "membership_level": "bronze",
+        "other_info": "123 Enterprises is a family-owned business that has been providing quality service since 1950."
+      },
+      {
+        "name": "Acme Inc.",
+        "address": "555 Oak St, Anytown USA",
+        "phone": "555-3456",
+        "website": "https://www.acmeinc.com",
+        "image": "./images/company-logo.png",
+        "membership_level": "np",
+        "other_info": "Acme Inc. is a startup that specializes in innovative technology solutions."
+      },
+      {
+        "name": "Baker's Delight",
+        "address": "777 Baker St, Anytown USA",
+        "phone": "555-7890",
+        "website": "https://www.bakersdelight.com",
+        "image": "./images/company-logo.png",
+        "membership_level": "bronze",
+        "other_info": "Baker's Delight is a small bakery that offers a wide variety of fresh-baked goods."
+      },
+      {
+        "name": "Green Thumb Nursery",
+        "address": "222 Garden Way, Anytown USA",
+        "phone": "555-2345",
+        "website": "https://www.greenthumbnursery.com",
+        "image": "./images/company-logo.png",
+        "membership_level": "silver",
+        "other_info": "Green Thumb Nursery is a garden center that has been serving the community for over 30 years."
+      },
+      {
+        "name": "Coastal Adventures",
+        "address": "333 Beach Rd, Anytown USA",
+        "phone": "555-6789",
+        "website": "https://www.coastaladventures.com",
+        "image": "./images/company-logo.png",
+        "membership_level": "gold",
+        "other_info": "Coastal Adventures offers guided tours and outdoor activities for all ages."
+      },
+      {
+        "name": "Precision Auto",
+        "address": "444 Mechanic St, Anytown USA",
+        "phone": "555-0123",
+        "website": "https://www.precisionauto.com",
+        "image": "./images/company-logo.png",
+        "membership_level": "np",
+        "other_info": "Precision Auto is a full-service auto repair shop that has been serving the community for over 20 years."
+      },
+      {
+        "name": "The Coffee House",
+        "address": "789 Java Lane, Anytown USA",
+        "phone": "555-4567",
+        "website": "https://www.thecoffeehouse.com",
+        "image": "./images/company-logo.png",
+        "membership_level": "bronze",
+        "other_info": "The Coffee House is a cozy cafe that serves freshly brewed coffee and homemade pastries."
+      }
+    ]
+  }
+  

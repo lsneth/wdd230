@@ -106,4 +106,19 @@
 	#phoneMenu{
 		display: none;
 	}
+
+	#businessList .listItem{
+		display: grid;
+		grid-template-columns: 75px 1fr;
+	}
+
+	.businessInfo {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap:40px;
+	}
+
+	.businessInfo h2{
+		font-size: 16px;
+	}
 }

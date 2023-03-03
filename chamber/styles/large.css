@@ -161,4 +161,8 @@
         margin:0;
         width:100%;
     }
+
+	.businessInfo {
+		grid-template-columns: 150px 250px 100px 1fr;
+	}
 }
