@@ -49,7 +49,7 @@
         "name": "Green Thumb Nursery",
         "address": "222 Garden Way, Anytown USA",
         "phone": "555-2345",
-        "website": "https://www.greenthumbnursery.com",
+        "website": "https://www.gtnursery.com",
         "image": "./images/company-logo.png",
         "membership_level": "silver",
         "other_info": "Green Thumb Nursery is a garden center that has been serving the community for over 30 years."
@@ -58,7 +58,7 @@
         "name": "Coastal Adventures",
         "address": "333 Beach Rd, Anytown USA",
         "phone": "555-6789",
-        "website": "https://www.coastaladventures.com",
+        "website": "https://www.coastadvents.com",
         "image": "./images/company-logo.png",
         "membership_level": "gold",
         "other_info": "Coastal Adventures offers guided tours and outdoor activities for all ages."
@@ -76,7 +76,7 @@
         "name": "The Coffee House",
         "address": "789 Java Lane, Anytown USA",
         "phone": "555-4567",
-        "website": "https://www.thecoffeehouse.com",
+        "website": "https://www.coffeehouse.com",
         "image": "./images/company-logo.png",
         "membership_level": "bronze",
         "other_info": "The Coffee House is a cozy cafe that serves freshly brewed coffee and homemade pastries."

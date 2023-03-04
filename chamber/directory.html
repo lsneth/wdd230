@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <title>Directory | Rexburg Chamber of Commerce</title>
     </head>
     <body>
@@ -42,9 +44,9 @@
         </header>
         <main id="directoryMain">
             <input type="radio" id="grid" class="gridListSelector" name="grid/list" value="grid" checked>
-            <label for="grid" id="gridLabel"><div class="gridListSelectorContainer"><img src="./images/grid-icon.png"></div></i></label>
+            <label for="grid" id="gridLabel"><span class="gridListSelectorContainer"><img src="./images/grid-icon.png" alt="grid selector"></span></label>
             <input type="radio" id="list" class="gridListSelector" name="grid/list" value="list">
-            <label for="list" id="listLabel"><div class="gridListSelectorContainer"><img src="./images/list-icon.png"></div></i></label>
+            <label for="list" id="listLabel"><span class="gridListSelectorContainer"><img src="./images/list-icon.png"  alt="list selector"></span></label>
             <div id="businessCards"></div>
             <div id="businessList"></div>
         </main>
@@ -86,5 +88,6 @@
             </div>
         </footer>
         <script src="scripts/directory.js"></script>
+        <script src="scripts/date.js"></script>
     </body>
 </html>
