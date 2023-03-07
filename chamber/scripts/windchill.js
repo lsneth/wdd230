@@ -7,3 +7,5 @@ function getWindChill(temp, windSpeed){
 }
 
 (temp<=50 && windSpeed>3) ? (windChill.textContent=`${(getWindChill(temp, windSpeed)).toFixed()}°`):(windChill.textContent='N/A')
+
+// const API_KEY='11b458d7fbab78d318815a683f938f58'
