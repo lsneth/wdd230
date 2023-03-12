@@ -390,5 +390,8 @@ background-color: var(--dark-blue);
 
 #directoryMain{
 	display:block;
+}
 
+.contact1, .contact2{
+	margin-top:50px;
 }

@@ -121,4 +121,15 @@
 	.businessInfo h2{
 		font-size: 16px;
 	}
+
+	.contact1{
+		margin-top:0px;
+	}
+
+	#contactMain{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap:80px;
+		margin:0 30px;
+	}
 }
