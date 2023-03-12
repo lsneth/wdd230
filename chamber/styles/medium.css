@@ -132,4 +132,8 @@
 		gap:80px;
 		margin:0 30px;
 	}
+
+	.navigation li a{
+		padding-right:0px;
+	}
 }

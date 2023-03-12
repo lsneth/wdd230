@@ -395,3 +395,7 @@ background-color: var(--dark-blue);
 .contact1, .contact2{
 	margin-top:50px;
 }
+
+.navigation li a{
+	padding-right:30px;
+}
