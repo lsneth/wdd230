@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+:root {
+  --primary-accent: #eb465a;
+  --secondary-accent: #18bb43;
+}
+
 body {
   font-family: 'Indie Flower', sans-serif;
 }
@@ -112,4 +117,23 @@ body {
 
 .responsive li a{
   text-align: right;
+}
+
+footer {
+  background-color: var(--primary-accent);
+  color:white;
+  padding:0 auto;
+  justify-content: center;
+  display:flex;
+}
+
+.footer-logo{
+  max-height: 173px;
+  padding:30px 15px;
+}
+
+.footer-text{
+  display: inline-block;
+  text-align: left;
+  padding:30px 15px;
 }
