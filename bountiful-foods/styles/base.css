@@ -7,7 +7,6 @@ body {
 .nav-menu {
   background-color: #fff;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
-  display: flex;
   justify-content: center;
   padding:0;
   margin:0;
@@ -17,12 +16,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 .nav-menu li {
   display: inline-block;
-  height: 100%;
 }
 
 .nav-menu li a {
@@ -31,7 +28,6 @@ body {
   font-size: 18px;
   padding: 25px;
   text-decoration: none;
-  height: 100%;
 }
 
 .nav-menu li a:hover {
@@ -39,7 +35,7 @@ body {
 }
 
 .logo-link{
-  margin-right: auto;
+  margin: 0 auto -65px 0;
 }
 
 .logo-link a{
@@ -56,4 +52,64 @@ body {
   color:black;
   display:inline;
   padding-top:4px;
+}
+
+.nav-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width:100%;
+}
+
+.nav-links li:first-child {
+	display: block;
+}
+
+.nav-links li {
+	display: none;
+}
+
+.nav-links a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	background-color: var(--dark-blue);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size:16px;
+}
+
+.nav-links a:hover, .nav-links a:active {
+	background-color: var(--blue);
+}
+
+.nav-links li a{
+	padding-right:30px;
+}
+
+#menu::before {
+	content: '☰';
+	font-size: 2rem;
+	background-color: var(--dark-blue);
+}
+
+
+#menu{
+  text-align: right;
+  padding:15px 30px;
+}
+
+.responsive #menu::before {
+  content: '✖';
+  background-color: var(--dark-blue);
+}
+
+.responsive li {
+  display: block;
+  border-bottom: solid 1px rgb(168, 168, 168);
+}
+
+.responsive li a{
+  text-align: right;
 }

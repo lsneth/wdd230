@@ -1,0 +1,169 @@
+@media only screen and (min-width: 60em) {
+    picture{
+        margin:50px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        gap:5%;
+    }
+    
+    picture img{
+        margin:30px;
+    }
+    
+    picture p{
+        margin-top:15%;
+    }
+
+	#menu {
+		display: none;
+        background-color:var(--dark-blue);
+	}
+    
+    main{
+        max-width: 1500px;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: auto auto auto;
+        margin:0 auto;
+	}
+
+    .hero button{
+        margin:0;
+    }
+
+    .event{
+        grid-column: 1/2;
+        grid-row:1/2;
+    }
+    
+    .hero{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .spotlight{
+        padding:0px;
+        border-left:none;
+        border-right:none;
+        margin:0;
+    }
+
+    .spotlight p{
+        font-size: 12px;
+        padding:0;
+        margin:0;
+    }
+    
+    .spotlight img, .weather img{
+        max-height: 80px;
+    }
+
+    .homeCard h1{
+        font-size: 23px;
+    }
+
+    .homeCard h2{
+        font-size: 18px;
+    }
+
+    .homeCard{
+        padding:0;
+        margin:0;
+    }
+
+    .spotlight2{
+        border-top: 1px solid var(--blue);
+        border-bottom: 1px solid var(--blue);
+    }
+
+    .spotlights{
+        grid-template-columns: 1fr;
+        grid-column: 3/4;
+        grid-row:1/-1;
+        padding:0px;
+    }
+
+    .weather{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .spotlight3{
+        display: block;
+    }
+
+    .join{
+        grid-column:1/2;
+        grid-row:3/4;
+    }
+
+    .hero button{
+        margin:0;
+        position: absolute;
+        bottom:30px;
+        right:30px;
+    }
+
+    .hero{
+        background-image: url('../images/hero-large.jpg');
+        position: relative;
+    }
+
+    .news{
+        grid-column: 2/3;
+        grid-row:3/4;
+    }
+    
+    #lastUpdatedString{
+        display: inline;
+    }
+    
+    .bar{
+        display: inline;
+	}
+    .homeCard{
+        padding:20px;
+    }
+
+    table {
+        display:block;
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+      
+    th, td {
+        text-align: left;
+        padding: 0.5rem;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #join{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    table{
+        margin: 40px;
+        max-width: 400px;
+    }
+
+    form{
+        max-width: none;
+        margin:0;
+        width:100%;
+    }
+
+	.businessInfo {
+		grid-template-columns: 150px 250px 100px 1fr;
+	}
+}
