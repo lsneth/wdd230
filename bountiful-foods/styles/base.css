@@ -160,13 +160,14 @@ main p{
   padding: 0 25px 25px;
 }
 
-first-home-card{
-  margin-top:25px;
-}
-
 .home-card{
   margin:50px 0;
 }
+
+.first-home-card{
+  margin-top:0px;
+}
+
 
 button{
   background-color: var(--secondary-accent);
