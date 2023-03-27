@@ -196,3 +196,12 @@ button:hover{
 .socials{
   text-align: center;
 }
+
+.weather-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.weather-card{
+  text-align: center;
+}
