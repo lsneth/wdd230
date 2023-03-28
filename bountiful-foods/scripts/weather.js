@@ -7,7 +7,14 @@ async function getWeather() {
     const response = await fetch(weatherUrl)
     if (response.ok) {
       const data = await response.json()
-      return {temperature:data.main.temp, description:data.weather[0].description, humidity:data.main.humidity }
+      return {
+        temperature:data.main.temp.toFixed(),
+        low:data.main.temp_min.toFixed(),
+        high:data.main.temp_max.toFixed(),
+        description:data.weather[0].description,
+        humidity:data.main.humidity,
+        icon:data.weather[0].icon
+      }
     } else {
         throw Error(await response.text())
     }
@@ -21,23 +28,24 @@ async function getForecast() {
     const response = await fetch(forecastUrl)
     if (response.ok) {
       const data = await response.json()
+      console.log(data)
       const forecastOne = data.list.slice(0,8)
       const forecastTwo = data.list.slice(8,16)
       const forecastThree = data.list.slice(16,24)
-    return {
-        dayOne:{
+    return [
+        {
           dayName:getDayOfWeek(forecastOne[0].dt_txt.slice(0,10)),
           ...getHighAndLow(forecastOne)
         },
-        dayTwo:{
+        {
           dayName:getDayOfWeek(forecastTwo[0].dt_txt.slice(0,10)),
           ...getHighAndLow(forecastTwo)
         },
-        dayThree:{
+        {
           dayName:getDayOfWeek(forecastThree[0].dt_txt.slice(0,10)),
           ...getHighAndLow(forecastThree)
         }
-      }
+    ]
     } else {
         throw Error(await response.text())
     }
@@ -52,22 +60,51 @@ function getDayOfWeek(date) {
 }
 
 function getHighAndLow(forecastData) {
-  const highs = forecastData.map(data => data.main.temp_max)
-  const lows = forecastData.map(data => data.main.temp_min)
+  const highs = forecastData.map(data => data.main.temp_max.toFixed())
+  const lows = forecastData.map(data => data.main.temp_min.toFixed())
   const high = Math.max(...highs)
   const low = Math.min(...lows)
   return {high, low}
 }
   
-function displayResults(weatherData) {
-  const currentTemp = document.getElementById('current-temp')
-  currentTemp.textContent = `${weatherData.temperature}°`
-  temp.textContent = weatherData.main.temp.toFixed(0)
-  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`
-  const desc = weatherData.weather[0].description
-  weatherIcon.setAttribute('src', iconsrc)
-  weatherIcon.setAttribute('alt', desc)
-  currentCondition.textContent = weatherData.weather[0].description
+function displayWeather(weatherData) {
+  const currentTemperature = document.getElementById('current-temperature')
+  currentTemperature.textContent = `${weatherData.temperature}°`
+
+  const iconsrc = `https://openweathermap.org/img/w/${weatherData.icon}.png`
+  const icon = document.getElementById('current-icon')
+  icon.setAttribute('src', iconsrc)
+
+  const currentDescription = document.getElementById('current-description')
+  currentDescription.textContent = weatherData.description
+  
+  const currentHumidity = document.getElementById('current-humidity')
+  currentHumidity.textContent = `${weatherData.humidity}%`
+
+  const highLow = document.getElementById('high-low')
+  highLow.textContent = `${weatherData.high}° / ${weatherData.low}° `
 }
 
-getWeather().then(res => displayResults(res))
+function displayForecast(forecastData) {
+  const weatherCards = document.getElementById('weather-cards')
+
+  forecastData.map((data)=>{
+    const weatherCard = document.createElement('div')
+    weatherCard.setAttribute('class', 'weather-card')
+
+    const day = document.createElement('h3')
+    day.textContent=data.dayName
+
+    const temp = document.createElement('p')
+    temp.setAttribute('class', 'temp')
+    temp.textContent = `${data.high}° / ${data.low}°`
+
+    weatherCard.appendChild(day)
+    weatherCard.appendChild(temp)
+
+    weatherCards.append(weatherCard)
+  })
+}
+
+getWeather().then(res => displayWeather(res))
+getForecast().then(res => displayForecast(res))

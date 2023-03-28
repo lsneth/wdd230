@@ -197,11 +197,48 @@ button:hover{
   text-align: center;
 }
 
-.weather-cards{
+#weather-cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .weather-card{
   text-align: center;
+  border: solid 5px var(--secondary-accent);
+  margin:15px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+.high{
+  color:var(--primary-accent);
+}
+
+.low{
+  color:var(--secondary-accent);
+}
+
+#current-temperature{
+  font-size: 50px;
+}
+
+#current-icon{
+  position: relative;
+  bottom:-44px;
+  left:-53px;
+}
+
+#humidity-icon{
+  position: relative;
+  font-size: 16px;
+  bottom:-17px;
+  left:-30px;
+}
+
+#humidity-icon, #current-humidity{
+  margin-top:-4px;
+}
+
+.temp{
+  font-size: 50px;
 }
