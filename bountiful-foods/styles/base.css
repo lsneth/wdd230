@@ -255,3 +255,22 @@ button:hover{
   padding:20px;
   height: 195px;
 }
+
+form{
+  margin:0 auto;
+  width:50%;
+}
+
+label{
+  display:block;
+}
+
+input, select, textarea{
+  margin-bottom: 25px;
+  width:100%;
+}
+
+.centered{
+  margin-top:50px;
+  text-align: center;
+}

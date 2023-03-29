@@ -28,7 +28,6 @@ async function getForecast() {
     const response = await fetch(forecastUrl)
     if (response.ok) {
       const data = await response.json()
-      console.log(data)
       const forecastOne = data.list.slice(0,8)
       const forecastTwo = data.list.slice(8,16)
       const forecastThree = data.list.slice(16,24)
