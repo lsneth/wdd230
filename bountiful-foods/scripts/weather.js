@@ -79,7 +79,7 @@ function displayWeather(weatherData) {
   currentDescription.textContent = weatherData.description
   
   const currentHumidity = document.getElementById('current-humidity')
-  currentHumidity.textContent = `${weatherData.humidity}%`
+  currentHumidity.textContent = `${weatherData.humidity}% Humidity`
 
   const highLow = document.getElementById('high-low')
   highLow.textContent = `${weatherData.high}° / ${weatherData.low}° `
@@ -93,14 +93,29 @@ function displayForecast(forecastData) {
     weatherCard.setAttribute('class', 'weather-card')
 
     const day = document.createElement('h3')
+    day.setAttribute('class', 'day')
     day.textContent=data.dayName
 
-    const temp = document.createElement('p')
-    temp.setAttribute('class', 'temp')
-    temp.textContent = `${data.high}° / ${data.low}°`
+    const weatherCardContent = document.createElement('div')
+    weatherCardContent.setAttribute('class', 'weather-card-content')
+
+    const high = document.createElement('p')
+    high.setAttribute('class', 'temp')
+    high.textContent = `${data.high}°`
+
+    const divider = document.createElement('hr')
+    divider.setAttribute('class', 'divider')
+
+    const low = document.createElement('p')
+    low.setAttribute('class', 'temp')
+    low.textContent = `${data.low}°`
 
     weatherCard.appendChild(day)
-    weatherCard.appendChild(temp)
+    weatherCardContent.appendChild(high)
+    weatherCardContent.appendChild(divider)
+    weatherCardContent.appendChild(low)
+    
+    weatherCard.append(weatherCardContent)
 
     weatherCards.append(weatherCard)
   })

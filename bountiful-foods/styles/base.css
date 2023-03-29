@@ -204,18 +204,8 @@ button:hover{
 
 .weather-card{
   text-align: center;
-  border: solid 5px var(--secondary-accent);
   margin:15px;
   padding-bottom: 20px;
-  border-radius: 5px;
-}
-
-.high{
-  color:var(--primary-accent);
-}
-
-.low{
-  color:var(--secondary-accent);
 }
 
 #current-temperature{
@@ -223,9 +213,7 @@ button:hover{
 }
 
 #current-icon{
-  position: relative;
-  bottom:-44px;
-  left:-53px;
+  margin-bottom: -16px;
 }
 
 #humidity-icon{
@@ -235,10 +223,35 @@ button:hover{
   left:-30px;
 }
 
-#humidity-icon, #current-humidity{
-  margin-top:-4px;
+#current-humidity{
+  margin-top:15px;
 }
 
 .temp{
   font-size: 50px;
+}
+
+.divider{
+  width:80px;
+}
+
+#high-low{
+  margin-top:5px;
+}
+
+.day{
+  border: 5px solid var(--primary-accent);
+  border-radius: 5px;
+  padding:20px;
+  margin:0;
+}
+
+.weather-card-content{
+  border-left: solid 5px var(--secondary-accent);
+  border-bottom: solid 5px var(--secondary-accent);
+  border-right: solid 5px var(--secondary-accent);
+  border-radius: 5px;
+  margin:0;
+  padding:20px;
+  height: 195px;
 }
