@@ -131,8 +131,6 @@ footer {
   background-color: var(--primary-accent);
   color:white;
   padding:0 auto;
-  justify-content: center;
-  display:flex;
 }
 
 .footer-logo{
@@ -291,4 +289,24 @@ input, select, textarea{
 #drink-order-count{
   display: inline;
   margin-left:10px;
+}
+
+iframe{
+  min-width: 300px;
+  max-width: 100%;
+}
+
+h1, h2{
+  margin-bottom: 7px;
+}
+
+.top-footer{
+  display:flex;
+  justify-content: center;
+}
+
+.bottom-footer{
+  display:block;
+  text-align: center;
+  padding-bottom:25px;
 }
