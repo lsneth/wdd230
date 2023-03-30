@@ -26,5 +26,4 @@ getFruitData().then(data => data.map(fruitName => {
         newFruitOption.textContent=fruitName
         fruitSelector.appendChild(newFruitOption)
     })
-    
 }))
