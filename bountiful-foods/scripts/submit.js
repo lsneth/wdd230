@@ -48,6 +48,11 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
     const outputArea = document.getElementById('output-area')
     outputArea.innerHTML = output
     outputArea.style.border = '5px solid var(--secondary-accent)'
+
+    // increment count in local storage
+    let drinkOrderCount = parseInt(localStorage.getItem('drinkOrderCount')) || 0;
+    drinkOrderCount++;
+    localStorage.setItem('drinkOrderCount', drinkOrderCount);
   })
   .catch(error => console.log(error))
 

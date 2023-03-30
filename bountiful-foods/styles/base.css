@@ -281,10 +281,14 @@ input, select, textarea{
 }
 
 #output-area{
-  /* border: 5px solid var(--secondary-accent); */
   border-radius: 5px;
   min-width:300px;
   max-width:575px;
   margin:0 auto 50px;
   padding:0 25px 25px;
+}
+
+#drink-order-count{
+  display: inline;
+  margin-left:10px;
 }
