@@ -130,7 +130,6 @@ main {
 footer {
   background-color: var(--primary-accent);
   color:white;
-  padding:0 auto;
 }
 
 .footer-logo{
@@ -247,7 +246,7 @@ button:hover{
 .weather-card-content{
   border-left: solid 5px var(--secondary-accent);
   border-bottom: solid 5px var(--secondary-accent);
-  border-right: solid 5px var(--secondary-accent);
+  border-right: var(--secondary-accent) solid 5px;
   border-radius: 5px;
   margin:0;
   padding:20px;
@@ -259,7 +258,6 @@ form{
   padding:25px;
   min-width:300px;
   max-width:600px;
-  border-color: solid 1px var(--primary-accent);
 }
 
 label{
